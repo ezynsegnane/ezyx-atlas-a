@@ -56,7 +56,7 @@ keywords:
   - Benjamini-Hochberg
   - scientific software
 preferred-citation:
-  type: article
+  type: software
   authors:
     - family-names: "Segnane"
       given-names: "Ezyn"
@@ -82,7 +82,7 @@ preferred-citation:
   title: >
     EZNX-ATLAS-A: Measuring the Incremental Contribution of Clinical Metadata
     to 12-Lead ECG Superclass Classification on PTB-XL
-  journal: "Mathematics"
-  publisher: "MDPI"
+  repository-code: "https://github.com/ezynsegnane/ezyx-atlas-a"
+  version: "2.3.3"
   year: 2026
-  notes: "Submitted; cite using this entry until a DOI is assigned."
+  notes: "Publisher-neutral research software and reproducibility package; cite the article DOI once assigned."

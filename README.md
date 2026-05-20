@@ -7,17 +7,16 @@
 [![PyTorch 2.3.1+cpu](https://img.shields.io/badge/PyTorch-2.3.1--cpu-EE4C2C.svg)](https://pytorch.org/get-started/locally/)
 [![PTB-XL 1.0.3](https://img.shields.io/badge/dataset-PTB--XL%201.0.3-green.svg)](https://physionet.org/content/ptb-xl/1.0.3/)
 
-**Ezyn SEGNANE** · University of Nouakchott, Mauritania  
-**Younes OMMANE** · Mohammed VI Polytechnic University, Morocco  
-**Khalil EL WALED · Mohamedou CHEIKH TOURAD** · University of Nouakchott, Mauritania  
+**Ezyn Segnane**, **Younes Ommane**, **Khalil El Waled**, **Mohamedou Cheikh Tourad**,  
+**Maryam Mouadili**, **Diego Peluffo-Ordóñez**, and **Mohamed Abdallahi Beddi**
 
-Submitted to *Mathematics* (MDPI) — manuscript v2 · 2026-05-20
+Publisher-neutral research code, results, and manuscript reproducibility package · 2026-05-20
 
 ---
 
 ## What this repository contains
 
-This repository is the complete reproducibility package for the paper **EZNX-ATLAS-A**.
+This repository is the complete reproducibility package for the study **EZNX-ATLAS-A**.
 It provides:
 
 - The full **model architecture** source code (`eznx_model_v5.py`, `eznx_loader_v2.py`)
@@ -25,8 +24,8 @@ It provides:
 - All **250 seed-level result JSON files** across six experimental groups (A–F) — no GPU or checkpoint needed to verify the statistics:
   - `results/seed_json/` — 60 Group A files (3 variants × 20 seeds)
   - `results/extended_json/` — 190 Groups B–F files
-- The **paper figures** (Figures 1–6) in `figures/`
-- The **authoritative MDPI submission package** (`mdpi_mathematics_submission_package/MDPI_template_ACS_v2/`) including `main_en.tex`, `main_en.pdf`, and `bibliography.bib`
+- The **study figures** (Figures 1–6) in `figures/`
+- The current **LaTeX manuscript source package**, including `main_en.tex`, `main_en.pdf`, and `bibliography.bib`
 - A complete **statistical analysis** package (`results/`) with paired Wilcoxon tests, Benjamini–Hochberg FDR correction over the pre-specified 3-test family, bootstrap CIs, and effect sizes
 - Aggregate **item 8 supplementary analyses** (`results/item8_*`) covering metadata-only LR/XGBoost baselines, post-hoc metadata controls, per-class AUPRC, Brier/ECE, and subgroup AUC summaries
 - A strict **CPU Docker reproducibility layer** (`reproducibility/`)
@@ -125,7 +124,7 @@ Three heads:   ℓ_ecg,  ℓ_meta,  ℓ_fused = W_f·z + 0.05·q_meta·ℓ_meta
 Inference:     p = w*·σ(ℓ_fused)    [w* = 1.0 fixed a priori in all 250 runs]
 ```
 
-See `mdpi_mathematics_submission_package/MDPI_template_ACS_v2/main_en.pdf` for the full mathematical formulation and `figures/fig1_architecture.pdf` for a diagram.
+See the compiled manuscript PDF for the full mathematical formulation and `figures/fig1_architecture.pdf` for a diagram.
 
 ---
 
@@ -177,7 +176,7 @@ eznx-atlas-a/
 │   ├── EZNX_ATLAS_A_smoke_test.ipynb        # Hosted Colab notebook
 │   └── README.md
 │
-├── results/                         # All numerical artifacts from the paper
+├── results/                         # All numerical artifacts from the study
 │   ├── statistical_analysis_full.json       # Master paired-statistics export
 │   ├── statistical_analysis_report.md       # Human-readable analysis narrative
 │   ├── statistical_analysis_protocol.md     # Pre-specified 3-test BH-FDR family
@@ -204,7 +203,7 @@ eznx-atlas-a/
 │       ├── results_ATLAS_A_v5_demo+anthro_tf2_vf3_seed2024.json  (Group F)
 │       └── ... (190 files total)
 │
-├── figures/                         # Final paper figures
+├── figures/                         # Final study figures
 │   ├── fig1_architecture.pdf
 │   ├── fig2_training_curves.pdf
 │   ├── fig3_per_class_delta_auc.pdf
@@ -212,12 +211,11 @@ eznx-atlas-a/
 │   ├── fig5_per_class_heatmap.pdf
 │   └── fig6_seed_distribution.pdf
 │
-└── mdpi_mathematics_submission_package/
-    └── MDPI_template_ACS_v2/        # AUTHORITATIVE MDPI submission package
-        ├── main_en.tex              # LaTeX source (v2, 2026-05-20)
-        ├── main_en.pdf              # Compiled PDF (29 pages)
-        ├── bibliography.bib         # BibTeX database (39 entries)
-        └── figures/                 # Final manuscript figures (Figs 1–6)
+└── manuscript source package/
+    ├── main_en.tex                  # LaTeX source (v2, 2026-05-20)
+    ├── main_en.pdf                  # Compiled PDF (29 pages)
+    ├── bibliography.bib             # BibTeX database (39 entries)
+    └── figures/                     # Final manuscript figures (Figs 1–6)
 ```
 
 ---
@@ -262,11 +260,11 @@ conda env create -f environment.yml
 conda activate eznx-atlas-a
 ```
 
-> **Note:** All 250 paper runs used PyTorch 2.3.1+cpu on a CPU-only machine (no CUDA). CPU-only execution eliminates CUDA non-determinism, providing a stronger reproducibility guarantee.
+> **Note:** All 250 study runs used PyTorch 2.3.1+cpu on a CPU-only machine (no CUDA). CPU-only execution eliminates CUDA non-determinism, providing a stronger reproducibility guarantee.
 
 ---
 
-## Reproduce paper results
+## Reproduce study results
 
 ### Step 0 — Verify statistics without retraining (≈ 30 seconds)
 
@@ -337,7 +335,7 @@ python scripts/complete_item8_supplementary_analyses.py \
 
 ## Statistical protocol
 
-The primary confirmatory analysis applies **exact two-sided paired Wilcoxon signed-rank tests** with **Benjamini–Hochberg FDR control at q = 0.05** over the **pre-specified 3-test family** (the three pairwise macro-AUC contrasts of Group A). This family was declared before any confirmatory inference and is documented in the supplementary Table S1 bundled with the MDPI submission.
+The primary confirmatory analysis applies **exact two-sided paired Wilcoxon signed-rank tests** with **Benjamini–Hochberg FDR control at q = 0.05** over the **pre-specified 3-test family** (the three pairwise macro-AUC contrasts of Group A). This family was declared before any confirmatory inference and is documented in the supplementary Table S1 included with the manuscript materials.
 
 All other groups (B, C, D, E) are **exploratory**: raw p-values are reported descriptively without FDR correction. Group F is a **pre-declared multi-split absolute-performance check** analysed descriptively at the fold level (4 units), with no statistical test across the 20 runs as if independent; because only `demo+anthro` was re-run and the metadata normalization index was built from the primary folds 1--8, Group F should not be interpreted as a within-fold metadata-gain test.
 
@@ -352,15 +350,15 @@ The minimum attainable exact Wilcoxon p at n = 20 is 2/2²⁰ ≈ 1.9 × 10⁻�
 ## Citation
 
 ```bibtex
-@article{segnane2026eznxatlasa,
+@misc{segnane2026eznxatlasa,
   title   = {{EZNX-ATLAS-A}: Measuring the Incremental Contribution of Clinical
              Metadata to 12-Lead {ECG} Superclass Classification on {PTB-XL}},
   author  = {Segnane, Ezyn and Ommane, Younes and El Waled, Khalil and
              Cheikh Tourad, Mohamedou and Mouadili, Maryam and
              Peluffo-Ord{\'o}{\~n}ez, Diego and Beddi, Mohamed Abdallahi},
-  journal = {Mathematics},
   year    = {2026},
-  note    = {Submitted}
+  howpublished = {\url{https://github.com/ezynsegnane/ezyx-atlas-a}},
+  note    = {Research software and reproducibility package}
 }
 ```
 

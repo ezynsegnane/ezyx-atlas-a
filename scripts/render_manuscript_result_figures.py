@@ -1,4 +1,4 @@
-"""Render the result figures used by the MDPI manuscript.
+"""Render the result figures used by the manuscript.
 
 The script regenerates Figures 2--6 from stored experiment outputs without
 changing any reported value. It is intentionally separate from training and

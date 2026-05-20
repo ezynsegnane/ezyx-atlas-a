@@ -1,13 +1,17 @@
 %==============================================================
-%  EZNX-ATLAS-A -- MDPI Mathematics English submission source
+%  EZNX-ATLAS-A -- English manuscript source
 %  2026-05-12
 %==============================================================
-\documentclass[mathematics,article,submit,pdftex]{Definitions/mdpi}
+\documentclass[mathematics,article,pdftex]{Definitions/mdpi}
 
 \usepackage{bm}
 \providecommand{\history}[1]{}
 \providecommand{\TitleCitation}[1]{}
 \providecommand{\AuthorCitation}[1]{}
+\makeatletter
+\gdef\@journalshort{Manuscript}
+\gdef\@journalfull{Manuscript}
+\makeatother
 \setlength{\headheight}{20pt}
 \AtBeginDocument{%
   \pdfstringdefDisableCommands{%
@@ -30,12 +34,12 @@
   \hypersetup{
     pdftitle={EZNX-ATLAS-A: Measuring the Incremental Contribution of Clinical Metadata to 12-Lead ECG Superclass Classification on PTB-XL},
     pdfauthor={Ezyn SEGNANE, Younes OMMANE, Khalil EL WALED, Mohamedou CHEIKH TOURAD, Maryam MOUADILI, Diego H. PELUFFO-ORDONEZ, Mohamed Abdallahi BEDDI},
-    pdfsubject={MDPI Mathematics submission},
+    pdfsubject={EZNX-ATLAS-A manuscript and reproducibility package},
     pdfkeywords={electrocardiogram, deep learning, multimodal fusion, missing data, PTB-XL}
   }%
 }
 
-% ---- MDPI administrative ----------------------------------
+% ---- Journal-template administrative metadata --------------
 \firstpage{1}
 \makeatletter\setcounter{page}{\@firstpage}\makeatother
 \pubvolume{1}
@@ -335,7 +339,7 @@ We report macro-AUC and macro-$F_1^{\ast}$ as mean $\pm$ standard deviation acro
 
 Decision thresholds are tuned per class on fold~9 and fixed for fold~10; reported $p$-values are therefore conditional on this validation-based model-selection protocol.
 
-\subsection{Methodological contribution and fit with Mathematics}
+\subsection{Methodological contribution and statistical framing}
 The seed-matched paired-Wilcoxon measurement pipeline introduced here is a generalisable statistical framework for multimodal-ML ablations, and constitutes the primary methodological contribution of this work to the mathematical sciences. For each seed $s$ and variant $V_k$, one trains to obtain a scalar evaluation metric $r_{k,s}$. Pairwise incremental effects are estimated as $\delta_{jk,s} = r_{j,s} - r_{k,s}$. Inference proceeds by applying the exact two-sided Wilcoxon signed-rank test (a distribution-free rank test on signed differences), BH-FDR correction over the pre-specified confirmatory test family (controlling the expected proportion of false discoveries among rejected hypotheses), and percentile bootstrap confidence intervals on the seed-matched differences. Effect sizes are reported as Cohen's $d_{\mathrm{z}}$ with Hedges' small-sample correction $g_{\mathrm{z}}$. Exploratory groups report raw $p$-values descriptively without FDR correction. The framework provides a principled approach to the multiple-comparison problem in deep learning ablation studies, separating a pre-specified confirmatory family (3-test BH-FDR) from exploratory nominal $p$-values, and quantifying incremental contributions with calibrated uncertainty. It applies to any setting satisfying three conditions: (i) a baseline model can be paired with an augmented variant across the same random seeds; (ii) the number of seeds is small (say, $n \in [5, 20]$); and (iii) one seeks calibrated inference about the incremental contribution of an additional input modality or component.
 
 % =============================================================

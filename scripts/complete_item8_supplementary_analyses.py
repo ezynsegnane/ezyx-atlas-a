@@ -1,7 +1,7 @@
-"""Complete the pre-specified supplementary analyses listed in limitation item 8.
+"""Complete the pre-specified supplementary analyses listed in item 8.
 
 The script is inference-only for trained neural checkpoints. It uses the frozen
-source snapshot bundled with the MDPI package, the archived Group A probability
+source snapshot bundled with the manuscript package, the archived Group A probability
 arrays/checkpoints, and the PTB-XL working index.
 
 Outputs are small aggregate artifacts suitable for the public repository:
