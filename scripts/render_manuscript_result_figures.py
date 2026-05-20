@@ -26,32 +26,17 @@ import numpy as np
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_RUNS_DIR = PROJECT_ROOT / "runs_test"
-DEFAULT_STATS_JSON = (
-    PROJECT_ROOT
-    / "submission_artifacts_en"
-    / "analysis_recomputed_10000"
-    / "statistical_analysis_full.json"
-)
-DEFAULT_MISSINGNESS_CSV = (
-    PROJECT_ROOT
-    / "submission_artifacts_en"
-    / "missingness_eval"
-    / "missingness_eval_demo_anthro_rows.csv"
-)
-DEFAULT_MISSINGNESS_JSON = (
-    PROJECT_ROOT
-    / "submission_artifacts_en"
-    / "missingness_eval"
-    / "missingness_eval_demo_anthro_summary.json"
-)
+DEFAULT_RUNS_DIR = PROJECT_ROOT / "results" / "seed_json"
+DEFAULT_STATS_JSON = PROJECT_ROOT / "results" / "statistical_analysis_full.json"
+DEFAULT_MISSINGNESS_CSV = PROJECT_ROOT / "results" / "missingness_eval_demo_anthro_rows.csv"
+DEFAULT_MISSINGNESS_JSON = PROJECT_ROOT / "results" / "missingness_eval_demo_anthro_summary.json"
 DEFAULT_FIGURE_DIR = (
     PROJECT_ROOT
     / "mdpi_mathematics_submission_package"
-    / "MDPI_template_ACS"
+    / "MDPI_template_ACS_v2"
     / "figures"
 )
-DEFAULT_MIRROR_DIR = PROJECT_ROOT / "mdpi_mathematics_submission_package" / "MDPI_template_ACS"
+DEFAULT_MIRROR_DIR = PROJECT_ROOT / "figures"
 
 CLASS_ORDER = ["NORM", "MI", "STTC", "CD", "HYP"]
 VARIANT_ORDER = ["none", "demo", "demo+anthro"]
@@ -293,7 +278,7 @@ def render_fig2_training_and_test(
             va="bottom",
             fontsize=8.4,
         )
-    axis_test.set_title("Final test macro-AUC, 10 seeds")
+    axis_test.set_title("Final test macro-AUC, 20 seeds")
     axis_test.set_xticks(x)
     axis_test.set_xticklabels(["NONE", "DEMO", "DEMO+\nANTHRO"])
     axis_test.set_ylabel("Test macro-AUC")
@@ -441,7 +426,7 @@ def render_fig4_missingness(
     axis.text(
         0.02,
         0.04,
-        "Points show 10-seed mean +/- SD",
+        "Points show 20-seed mean +/- SD",
         transform=axis.transAxes,
         ha="left",
         va="bottom",

@@ -32,30 +32,23 @@ from eznx_loader_v2 import DS5_LABELS, EZNXDataset
 from eznx_model_v5 import EZNX_ATLAS_A_v5
 
 
-DEFAULT_RUNS_DIR = PROJECT_ROOT / "runs_test"
+DEFAULT_RUNS_DIR = Path(os.environ.get("EZNX_RUNS_DIR", PROJECT_ROOT / "runs_test"))
 DEFAULT_DATA_ROOT = Path(
     os.environ.get(
         "PTBXL_DATA_ROOT",
         r"C:\eznx\data\AXIOM12L_v103\physionet.org\files\ptb-xl\1.0.3",
     )
 )
-DEFAULT_INDEX_PATH = PROJECT_ROOT / "data" / "index_complete.parquet"
-DEFAULT_STATS_JSON = (
-    PROJECT_ROOT
-    / "submission_artifacts_en"
-    / "analysis_final_10000"
-    / "statistical_analysis_full.json"
-)
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "submission_artifacts_en" / "missingness_eval"
+DEFAULT_INDEX_PATH = Path(os.environ.get("EZNX_INDEX_PATH", PROJECT_ROOT / "data" / "index_complete.parquet"))
+DEFAULT_STATS_JSON = PROJECT_ROOT / "results" / "statistical_analysis_full.json"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results"
 DEFAULT_FIGURE_DIR = (
     PROJECT_ROOT
     / "mdpi_mathematics_submission_package"
-    / "MDPI_template_ACS"
+    / "MDPI_template_ACS_v2"
     / "figures"
 )
-DEFAULT_FIGURE_MIRROR_DIR = (
-    PROJECT_ROOT / "mdpi_mathematics_submission_package" / "MDPI_template_ACS"
-)
+DEFAULT_FIGURE_MIRROR_DIR = PROJECT_ROOT / "figures"
 
 ANTHRO_VALUE_INDICES = [2, 3, 4]
 ANTHRO_MISSING_INDICES = [5, 6, 7]
@@ -75,7 +68,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--figure-dir", type=Path, default=DEFAULT_FIGURE_DIR)
     parser.add_argument("--figure-mirror-dir", type=Path, default=DEFAULT_FIGURE_MIRROR_DIR)
     parser.add_argument("--figure-formats", default="pdf,png,svg")
-    parser.add_argument("--seeds", default="2024,2025,2026,2027,2028,2029,2030,2031,2032,2033")
+    parser.add_argument(
+        "--seeds",
+        default="2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043",
+    )
     parser.add_argument("--rhos", default="0,0.25,0.5,0.75,1.0")
     parser.add_argument("--mask-seed", type=int, default=20260419)
     parser.add_argument("--batch-size", type=int, default=64)
@@ -155,7 +151,11 @@ def apply_anthro_dropout(
 def load_checkpoint_model(checkpoint_path: Path, device: torch.device) -> tuple[EZNX_ATLAS_A_v5, float]:
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
     model = EZNX_ATLAS_A_v5(meta_dropout_p=0.10, n_classes=len(DS5_LABELS)).to(device)
-    model.load_state_dict(checkpoint["model_state_dict"])
+    state_dict = dict(checkpoint["model_state_dict"])
+    if "ts_meta_addon.weight" in state_dict and "W_addon.weight" not in state_dict:
+        state_dict["W_addon.weight"] = state_dict.pop("ts_meta_addon.weight")
+        state_dict["W_addon.bias"] = state_dict.pop("ts_meta_addon.bias")
+    model.load_state_dict(state_dict)
     model.eval()
     return model, float(checkpoint.get("w_fused", 1.0))
 
@@ -194,6 +194,13 @@ def evaluate_checkpoint(
 
 
 def checkpoint_path_for_seed(runs_dir: Path, seed: int) -> Path:
+    current_name = (
+        runs_dir
+        / f"ATLAS_A_v5_demo+anthro_seed{seed}"
+        / f"best_model_ATLAS_A_v5_demo+anthro_seed{seed}.pt"
+    )
+    if current_name.exists():
+        return current_name
     return (
         runs_dir
         / f"ATLAS_A_v5_demo+anthro_seed{seed}"
@@ -219,8 +226,14 @@ def load_expected_seed_auc(runs_dir: Path, seed: int) -> float | None:
     path = (
         runs_dir
         / f"ATLAS_A_v5_demo+anthro_seed{seed}"
-        / f"results_demo+anthro_seed{seed}.json"
+        / f"results_ATLAS_A_v5_demo+anthro_seed{seed}.json"
     )
+    if not path.exists():
+        path = (
+            runs_dir
+            / f"ATLAS_A_v5_demo+anthro_seed{seed}"
+            / f"results_demo+anthro_seed{seed}.json"
+        )
     if not path.exists():
         return None
     with path.open("r", encoding="utf-8") as handle:

@@ -95,7 +95,7 @@ All three pairwise contrasts are statistically significant after BH-FDR correcti
 - Demographics alone (age, sex) are already detectable by the ECG (Attia et al. 2019: age MAE 6.9 y, sex AUC 0.97), yet a **residual +0.0007 increment** not fully captured by the ECG-only model is detected with 20 seeds.
 - **HYP shows no significant effect** (p_BH = 0.648), despite classical LVH criteria depending on body habitus — consistent with superclass heterogeneity at 12% prevalence.
 - **Split-level absolute performance varies**: Group F (4 alternative folds, 5 seeds each) shows an inter-fold range [0.9400, 0.9445], above fold 10 (0.9289), but evaluates only `demo+anthro` and is descriptive because the metadata normalization index was built from the primary folds 1--8.
-- Under full anthropometric masking at inference, macro-AUC drops by only **≈ 0.0014** — the quality-gated fusion degrades gracefully, converging to the demographics-only baseline.
+- Under full anthropometric masking at inference, macro-AUC drops by only **≈ 0.0011** — the quality-gated fusion degrades gracefully, converging to the demographics-only baseline.
 
 ---
 
