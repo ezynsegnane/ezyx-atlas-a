@@ -1,0 +1,88 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata from this file."
+title: "EZNX-ATLAS-A"
+type: software
+version: "2.3.3"
+date-released: 2026-04-25
+license: MIT
+repository-code: "https://github.com/ezynsegnane/ezyx-atlas-a"
+authors:
+  - family-names: "Segnane"
+    given-names: "Ezyn"
+    orcid: "https://orcid.org/0009-0005-0538-4335"
+    affiliation: "Digital Systems and Applications (SAN), Faculty of Sciences and Techniques, University of Nouakchott, Nouakchott, Mauritania"
+    email: "ezyn.segnane@univ-nkc.mr"
+  - family-names: "Ommane"
+    given-names: "Younes"
+    orcid: "https://orcid.org/0000-0001-6827-2967"
+    affiliation: "Faculty of Medical Sciences, UM6P Hospitals, Mohammed VI Polytechnic University (UM6P), Benguerir, Morocco"
+  - family-names: "El Waled"
+    given-names: "Khalil"
+    orcid: "https://orcid.org/0009-0001-7356-032X"
+    affiliation: "Digital Systems and Applications (SAN), Faculty of Sciences and Techniques, University of Nouakchott, Nouakchott, Mauritania"
+  - family-names: "Cheikh Tourad"
+    given-names: "Mohamedou"
+    orcid: "https://orcid.org/0000-0003-1273-7512"
+    affiliation: "Al-Khawarizmi, Faculty of Sciences and Techniques, University of Nouakchott, Nouakchott, Mauritania"
+  - family-names: "Mouadili"
+    given-names: "Maryam"
+    orcid: "https://orcid.org/0000-0002-5294-5546"
+    affiliation: "Faculty of Medical Sciences, UM6P Hospitals, Mohammed VI Polytechnic University (UM6P), Benguerir, Morocco"
+  - family-names: "Peluffo-Ordóñez"
+    given-names: "Diego"
+    orcid: "https://orcid.org/0000-0002-9045-6997"
+    affiliation: "College of Computing, Mohammed VI Polytechnic University (UM6P), Benguerir, Morocco"
+  - family-names: "Beddi"
+    given-names: "Mohamed Abdallahi"
+    orcid: "https://orcid.org/0000-0001-6276-3861"
+    affiliation: "Geometry, Analysis, Algebra and Applications (G3A), Faculty of Sciences and Technology, University of Nouakchott, Nouakchott, Mauritania"
+abstract: >
+  Training, statistical analysis, reproducibility, and index-construction
+  pipeline for the EZNX-ATLAS-A paper: a seed-matched
+  ablation study measuring the incremental contribution of clinical metadata
+  (age, sex, height, weight, BMI) to 12-lead ECG superclass classification
+  on PTB-XL 1.0.3. The confirmatory Group A comprises 60 runs (20 seeds x 3
+  variants); the full campaign totals 250 unique runs across six experimental
+  groups (A-F). All runs were executed on CPU only (Intel Core i5,
+  PyTorch 2.3.1+cpu) without GPU or CUDA.
+keywords:
+  - electrocardiography
+  - PTB-XL
+  - multimodal deep learning
+  - clinical metadata
+  - reproducibility
+  - ablation study
+  - Wilcoxon test
+  - Benjamini-Hochberg
+  - scientific software
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Segnane"
+      given-names: "Ezyn"
+      orcid: "https://orcid.org/0009-0005-0538-4335"
+    - family-names: "Ommane"
+      given-names: "Younes"
+      orcid: "https://orcid.org/0000-0001-6827-2967"
+    - family-names: "El Waled"
+      given-names: "Khalil"
+      orcid: "https://orcid.org/0009-0001-7356-032X"
+    - family-names: "Cheikh Tourad"
+      given-names: "Mohamedou"
+      orcid: "https://orcid.org/0000-0003-1273-7512"
+    - family-names: "Mouadili"
+      given-names: "Maryam"
+      orcid: "https://orcid.org/0000-0002-5294-5546"
+    - family-names: "Peluffo-Ordóñez"
+      given-names: "Diego"
+      orcid: "https://orcid.org/0000-0002-9045-6997"
+    - family-names: "Beddi"
+      given-names: "Mohamed Abdallahi"
+      orcid: "https://orcid.org/0000-0001-6276-3861"
+  title: >
+    EZNX-ATLAS-A: Measuring the Incremental Contribution of Clinical Metadata
+    to 12-Lead ECG Superclass Classification on PTB-XL
+  journal: "Mathematics"
+  publisher: "MDPI"
+  year: 2026
+  notes: "Submitted; cite using this entry until a DOI is assigned."

@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Test-set performance (fold 10) under the 20-seed multi-seed protocol.
+Results are mean $\pm$ SD across 20 seeds.
+$^{*}p < 0.05$; $^{**}p < 0.01$; $^{***}p < 0.001$ after BH-FDR correction
+over the 3-test pre-specified family (paired Wilcoxon signed-rank vs.\ ECG only).}
+\label{tab:results_multiseed}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{Macro-AUC} & \textbf{Macro-F1} & \textbf{$n$} \\
+\midrule
+ECG only (none) & $0.9271 \pm 0.0011$ & $0.7441 \pm 0.0030$ & 20 \\
+ECG + demo & $0.9277 \pm 0.0010$^{**} & $0.7458 \pm 0.0028$ & 20 \\
+ECG + demo+anthro (full) & $0.9289 \pm 0.0013$^{***} & $0.7462 \pm 0.0034$ & 20 \\
+\bottomrule
+\end{tabular}
+\end{table}

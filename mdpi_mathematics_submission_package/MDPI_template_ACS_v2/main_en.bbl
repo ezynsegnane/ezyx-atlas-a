@@ -1,0 +1,336 @@
+\begin{thebibliography}{999}
+
+\bibitem[Hannun et~al.(2019)Hannun, Rajpurkar, Haghpanahi, Tison, Bourn,
+  Turakhia, and Ng]{Hannun2019}
+Hannun, A.Y.; Rajpurkar, P.; Haghpanahi, M.; Tison, G.H.; Bourn, C.; Turakhia,
+  M.P.; Ng, A.Y.
+\newblock Cardiologist-level arrhythmia detection and classification in
+  ambulatory electrocardiograms using a deep neural network.
+\newblock {\em Nature Medicine} {\bf 2019}, {\em 25},~65--69.
+\newblock {\url{https://doi.org/10.1038/s41591-018-0268-3}}.
+
+\bibitem[Ribeiro et~al.(2020)Ribeiro, Ribeiro, Paix{\~a}o, Oliveira, Gomes,
+  Canazart, Ferreira, Andersson, Macfarlane, Meira~Jr., Sch{\"o}n, and
+  Ribeiro]{Ribeiro2020}
+Ribeiro, A.H.; Ribeiro, M.H.; Paix{\~a}o, G.M.M.; Oliveira, D.M.; Gomes, P.R.;
+  Canazart, J.A.; Ferreira, M.P.S.; Andersson, C.R.; Macfarlane, P.W.;
+  Meira~Jr., W.;  et~al.
+\newblock Automatic diagnosis of the 12-lead {ECG} using a deep neural network.
+\newblock {\em Nature Communications} {\bf 2020}, {\em 11},~1760.
+\newblock {\url{https://doi.org/10.1038/s41467-020-15432-4}}.
+
+\bibitem[Attia et~al.(2019)Attia, Kapa, Lopez-Jimenez, McKie, Ladewig, Satam,
+  Pellikka, Enriquez-Sarano, Noseworthy, Munger, Asirvatham, Scott, Carter, and
+  Friedman]{Attia2019LV}
+Attia, Z.I.; Kapa, S.; Lopez-Jimenez, F.; McKie, P.M.; Ladewig, D.J.; Satam,
+  G.; Pellikka, P.A.; Enriquez-Sarano, M.; Noseworthy, P.A.; Munger, T.M.;
+  et~al.
+\newblock Screening for cardiac contractile dysfunction using an artificial
+  intelligence--enabled electrocardiogram.
+\newblock {\em Nature Medicine} {\bf 2019}, {\em 25},~70--74.
+\newblock {\url{https://doi.org/10.1038/s41591-018-0240-2}}.
+
+\bibitem[Siontis et~al.(2021)Siontis, Noseworthy, Attia, and
+  Friedman]{Siontis2021}
+Siontis, K.C.; Noseworthy, P.A.; Attia, Z.I.; Friedman, P.A.
+\newblock Artificial intelligence-enhanced electrocardiography in
+  cardiovascular disease management.
+\newblock {\em Nature Reviews Cardiology} {\bf 2021}, {\em 18},~465--478.
+\newblock {\url{https://doi.org/10.1038/s41569-020-00503-2}}.
+
+\bibitem[Wagner et~al.(2020)Wagner, Strodthoff, Bousseljot, Kreiseler, Lunze,
+  Samek, and Schaeffter]{Wagner2020}
+Wagner, P.; Strodthoff, N.; Bousseljot, R.D.; Kreiseler, D.; Lunze, F.I.;
+  Samek, W.; Schaeffter, T.
+\newblock {PTB-XL}, a large publicly available electrocardiography dataset.
+\newblock {\em Scientific Data} {\bf 2020}, {\em 7},~154.
+\newblock {\url{https://doi.org/10.1038/s41597-020-0495-6}}.
+
+\bibitem[Strodthoff et~al.(2021)Strodthoff, Wagner, Schaeffter, and
+  Samek]{Strodthoff2021}
+Strodthoff, N.; Wagner, P.; Schaeffter, T.; Samek, W.
+\newblock Deep Learning for {ECG} Analysis: Benchmarks and Insights from
+  {PTB-XL}.
+\newblock {\em IEEE Journal of Biomedical and Health Informatics} {\bf 2021},
+  {\em 25},~1519--1528.
+\newblock {\url{https://doi.org/10.1109/JBHI.2020.3022989}}.
+
+\bibitem[Mehari and Strodthoff(2022)]{Mehari2022}
+Mehari, T.; Strodthoff, N.
+\newblock Self-supervised representation learning from 12-lead {ECG} data.
+\newblock {\em Computers in Biology and Medicine} {\bf 2022}, {\em
+  141},~105114.
+\newblock {\url{https://doi.org/10.1016/j.compbiomed.2021.105114}}.
+
+\bibitem[Weimann and Conrad(2025)]{Weimann2025}
+Weimann, K.; Conrad, T.O.F.
+\newblock Self-Supervised Pre-Training with Joint-Embedding Predictive
+  Architecture Boosts {ECG} Classification Performance.
+\newblock {\em Computers in Biology and Medicine} {\bf 2025}, {\em
+  196},~110809.
+\newblock {\url{https://doi.org/10.1016/j.compbiomed.2025.110809}}.
+
+\bibitem[Coppola et~al.(2024)Coppola, Savardi, Massussi, Adamo, Metra, and
+  Signoroni]{Coppola2024}
+Coppola, E.E.; Savardi, M.; Massussi, M.; Adamo, M.; Metra, M.; Signoroni, A.
+\newblock {HuBERT-ECG}: a self-supervised foundation model for broad and
+  scalable cardiac applications,  2024.
+\newblock medRxiv preprint (not peer-reviewed),
+  {\url{https://doi.org/10.1101/2024.11.14.24317328}}.
+
+\bibitem[Nguyen et~al.(2025)Nguyen, Pham, Le, and Nguyen]{Nguyen2025}
+Nguyen, H.D.; Pham, T.T.; Le, N.; Nguyen, V.
+\newblock {TolerantECG}: A Foundation Model for Imperfect Electrocardiogram.
+\newblock In Proceedings of the 33rd ACM International Conference on Multimedia
+  (MM '25), New York, NY, USA,  2025; pp. 8097--8105.
+\newblock Also available as arXiv:2507.09887,
+  {\url{https://doi.org/10.1145/3746027.3755287}}.
+
+\bibitem[Qiu et~al.(2024)Qiu, Guo, Wang, Yang, Peng, Xiayao, Chen, Yang, Liu,
+  Li, Li, Chen, and Chen]{Qiu2024}
+Qiu, Y.; Guo, H.; Wang, S.; Yang, S.; Peng, X.; Xiayao, D.; Chen, R.; Yang, J.;
+  Liu, J.; Li, M.;  et~al.
+\newblock Deep learning-based multimodal fusion of the surface {ECG} and
+  clinical features in prediction of atrial fibrillation recurrence following
+  catheter ablation.
+\newblock {\em BMC Medical Informatics and Decision Making} {\bf 2024}, {\em
+  24},~225.
+\newblock {\url{https://doi.org/10.1186/s12911-024-02616-x}}.
+
+\bibitem[Srivastava et~al.(2025)Srivastava, Kumar, Jiwari, Seth, and
+  Sharma]{Srivastava2025}
+Srivastava, S.; Kumar, D.; Jiwari, R.; Seth, S.; Sharma, D.
+\newblock {rECGnition\_v2.0}: Self-Attentive Canonical Fusion of {ECG} and
+  Patient Data using Deep Learning for Effective Cardiac Diagnostics,  2025.
+\newblock arXiv preprint arXiv:2502.16255,
+  {\url{https://doi.org/10.48550/arXiv.2502.16255}}.
+
+\bibitem[Atwa et~al.(2025)Atwa, Atlam, Ahmed, Atwa, Abdelrahim, and
+  Siam]{Atwa2025}
+Atwa, A.E.M.; Atlam, E.S.; Ahmed, A.; Atwa, M.A.; Abdelrahim, E.M.; Siam, A.I.
+\newblock Interpretable Deep Learning Models for Arrhythmia Classification
+  Based on {ECG} Signals Using {PTB-X} Dataset.
+\newblock {\em Diagnostics} {\bf 2025}, {\em 15},~1950.
+\newblock {\url{https://doi.org/10.3390/diagnostics15151950}}.
+
+\bibitem[Holloway et~al.(2026)Holloway, Saheer, and Dar]{Holloway2026}
+Holloway, C.; Saheer, L.B.; Dar, M.M.
+\newblock Evaluation of Raw Signal and Feature-Based Deep Learning Models for
+  Multi-Label {ECG} Diagnosis on {PTB-XL}.
+\newblock In Proceedings of the Artificial Intelligence XLII. Springer, Cham,
+  2026, Vol. 16302, {\em Lecture Notes in Computer Science}, pp. 458--464.
+\newblock First online 24 November 2025,
+  {\url{https://doi.org/10.1007/978-3-032-11442-6_36}}.
+
+\bibitem[Nonaka and Seita(2021)]{Nonaka2021}
+Nonaka, N.; Seita, J.
+\newblock In-depth Benchmarking of Deep Neural Network Architectures for {ECG}
+  Diagnosis.
+\newblock In Proceedings of the 6th Machine Learning for Healthcare Conference,
+   2021, Vol. 149, {\em PMLR}, pp. 414--439.
+
+\bibitem[{\'S}migiel et~al.(2021){\'S}migiel, Pa{\l}czy{\'n}ski, and
+  Ledzi{\'n}ski]{Smigiel2021}
+{\'S}migiel, S.; Pa{\l}czy{\'n}ski, K.; Ledzi{\'n}ski, D.
+\newblock {ECG} Signal Classification Using Deep Learning Techniques Based on
+  the {PTB-XL} Dataset.
+\newblock {\em Entropy} {\bf 2021}, {\em 23},~1121.
+\newblock {\url{https://doi.org/10.3390/e23091121}}.
+
+\bibitem[Pa{\l}czy{\'n}ski et~al.(2022)Pa{\l}czy{\'n}ski, {\'S}migiel,
+  Ledzi{\'n}ski, and Bujnowski]{Palczynski2022}
+Pa{\l}czy{\'n}ski, K.; {\'S}migiel, S.; Ledzi{\'n}ski, D.; Bujnowski, S.
+\newblock Study of the Few-Shot Learning for {ECG} Classification Based on the
+  {PTB-XL} Dataset.
+\newblock {\em Sensors} {\bf 2022}, {\em 22},~904.
+\newblock {\url{https://doi.org/10.3390/s22030904}}.
+
+\bibitem[Attia et~al.(2019)Attia, Friedman, Noseworthy, Lopez-Jimenez, Ladewig,
+  Satam, Pellikka, Munger, Asirvatham, Scott, Carter, and
+  Kapa]{Attia2019AgeSex}
+Attia, Z.I.; Friedman, P.A.; Noseworthy, P.A.; Lopez-Jimenez, F.; Ladewig,
+  D.J.; Satam, G.; Pellikka, P.A.; Munger, T.M.; Asirvatham, S.J.; Scott, C.G.;
+   et~al.
+\newblock Age and Sex Estimation Using Artificial Intelligence From Standard
+  12-Lead {ECGs}.
+\newblock {\em Circulation: Arrhythmia and Electrophysiology} {\bf 2019}, {\em
+  12},~e007284.
+\newblock {\url{https://doi.org/10.1161/CIRCEP.119.007284}}.
+
+\bibitem[Kiyasseh et~al.(2021)Kiyasseh, Zhu, and Clifton]{Kiyasseh2021}
+Kiyasseh, D.; Zhu, T.; Clifton, D.A.
+\newblock {CLOCS}: Contrastive Learning of Cardiac Signals Across Space, Time,
+  and Patients.
+\newblock In Proceedings of the 38th International Conference on Machine
+  Learning,  2021, Vol. 139, {\em PMLR}, pp. 5606--5615.
+
+\bibitem[Na et~al.(2024)Na, Park, Tae, and Joo]{Na2024}
+Na, Y.; Park, M.; Tae, Y.; Joo, S.
+\newblock Guiding Masked Representation Learning to Capture Spatio-Temporal
+  Relationship of Electrocardiogram.
+\newblock In Proceedings of the International Conference on Learning
+  Representations (ICLR),  2024.
+
+\bibitem[Strodthoff et~al.(2023)Strodthoff, Mehari, Nagel, Aston, Sundar,
+  Graff, Kanters, Haverkamp, D{\"o}ssel, Loewe, B{\"a}r, and
+  Schaeffter]{Strodthoff2023PTBXLPlus}
+Strodthoff, N.; Mehari, T.; Nagel, C.; Aston, P.J.; Sundar, A.; Graff, C.;
+  Kanters, J.K.; Haverkamp, W.; D{\"o}ssel, O.; Loewe, A.;  et~al.
+\newblock {PTB-XL+}, a comprehensive electrocardiographic feature dataset.
+\newblock {\em Scientific Data} {\bf 2023}, {\em 10},~279.
+\newblock {\url{https://doi.org/10.1038/s41597-023-02153-8}}.
+
+\bibitem[Dauphin et~al.(2017)Dauphin, Fan, Auli, and Grangier]{Dauphin2017}
+Dauphin, Y.N.; Fan, A.; Auli, M.; Grangier, D.
+\newblock Language Modeling with Gated Convolutional Networks.
+\newblock In Proceedings of the 34th International Conference on Machine
+  Learning,  2017, Vol.~70, {\em PMLR}, pp. 933--941.
+
+\bibitem[Arevalo et~al.(2020)Arevalo, Solorio, Montes-y G{\'o}mez, and
+  Gonz{\'a}lez]{Arevalo2020}
+Arevalo, J.; Solorio, T.; Montes-y G{\'o}mez, M.; Gonz{\'a}lez, F.A.
+\newblock Gated Multimodal Networks.
+\newblock {\em Neural Computing and Applications} {\bf 2020}, {\em
+  32},~10209--10228.
+\newblock {\url{https://doi.org/10.1007/s00521-019-04559-1}}.
+
+\bibitem[Chen et~al.(2019)Chen, Dou, Jin, Chen, Qin, and Heng]{Chen2019MICCAI}
+Chen, C.; Dou, Q.; Jin, Y.; Chen, H.; Qin, J.; Heng, P.A.
+\newblock Robust Multimodal Brain Tumor Segmentation via Feature
+  Disentanglement and Gated Fusion.
+\newblock In Proceedings of the MICCAI,  2019, Vol. 11766, {\em LNCS}, pp.
+  447--456.
+\newblock {\url{https://doi.org/10.1007/978-3-030-32248-9_50}}.
+
+\bibitem[Kim et~al.(2018)Kim, Koh, Kim, Choi, Hwang, and Choi]{Kim2018ACCV}
+Kim, J.; Koh, J.; Kim, Y.; Choi, J.; Hwang, Y.; Choi, J.W.
+\newblock Robust Deep Multi-modal Learning Based on Gated Information Fusion
+  Network.
+\newblock In Proceedings of the Asian Conference on Computer Vision (ACCV),
+  2018.
+\newblock {\url{https://doi.org/10.1007/978-3-030-20870-7_6}}.
+
+\bibitem[Baltru{\v{s}}aitis et~al.(2019)Baltru{\v{s}}aitis, Ahuja, and
+  Morency]{Baltrusaitis2019}
+Baltru{\v{s}}aitis, T.; Ahuja, C.; Morency, L.P.
+\newblock Multimodal Machine Learning: A Survey and Taxonomy.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}
+  {\bf 2019}, {\em 41},~423--443.
+\newblock {\url{https://doi.org/10.1109/TPAMI.2018.2798607}}.
+
+\bibitem[Havaei et~al.(2016)Havaei, Guizard, Chapados, and Bengio]{Havaei2016}
+Havaei, M.; Guizard, N.; Chapados, N.; Bengio, Y.
+\newblock {HeMIS}: Hetero-Modal Image Segmentation.
+\newblock In Proceedings of the MICCAI,  2016, Vol. 9901, {\em LNCS}, pp.
+  469--477.
+\newblock {\url{https://doi.org/10.1007/978-3-319-46723-8_54}}.
+
+\bibitem[Ma et~al.(2021)Ma, Ren, Zhao, Tulyakov, Wu, and Peng]{Ma2021}
+Ma, M.; Ren, J.; Zhao, L.; Tulyakov, S.; Wu, C.; Peng, X.
+\newblock {SMIL}: Multimodal Learning with Severely Missing Modality.
+\newblock In Proceedings of the AAAI Conference on Artificial Intelligence,
+  2021, Vol.~35, pp. 2302--2310.
+\newblock {\url{https://doi.org/10.1609/aaai.v35i3.16330}}.
+
+\bibitem[Zhang et~al.(2022)Zhang, He, Yang, Li, Wei, Huang, Zhang, He, and
+  Zheng]{Zhang2022}
+Zhang, Y.; He, N.; Yang, J.; Li, Y.; Wei, D.; Huang, Y.; Zhang, Y.; He, Z.;
+  Zheng, Y.
+\newblock {mmFormer}: Multimodal Medical Transformer for Incomplete Multimodal
+  Learning of Brain Tumor Segmentation.
+\newblock In Proceedings of the MICCAI,  2022, Vol. 13435, {\em LNCS}, pp.
+  107--117.
+\newblock {\url{https://doi.org/10.1007/978-3-031-16443-9_11}}.
+
+\bibitem[Sokolow and Lyon(1949)]{Sokolow1949}
+Sokolow, M.; Lyon, T.P.
+\newblock The Ventricular Complex in Left Ventricular Hypertrophy as Obtained
+  by Unipolar Precordial and Limb Leads.
+\newblock {\em American Heart Journal} {\bf 1949}, {\em 37},~161--186.
+\newblock {\url{https://doi.org/10.1016/0002-8703(49)90562-1}}.
+
+\bibitem[Casale et~al.(1985)Casale, Devereux, Kligfield, Eisenberg, Miller,
+  Chaudhary, and Phillips]{Casale1985}
+Casale, P.N.; Devereux, R.B.; Kligfield, P.; Eisenberg, R.R.; Miller, D.H.;
+  Chaudhary, B.S.; Phillips, M.C.
+\newblock Electrocardiographic Detection of Left Ventricular Hypertrophy:
+  Development and Prospective Validation of Improved Criteria.
+\newblock {\em Journal of the American College of Cardiology} {\bf 1985}, {\em
+  6},~572--580.
+\newblock {\url{https://doi.org/10.1016/S0735-1097(85)80115-7}}.
+
+\bibitem[Romhilt and Estes(1968)]{Romhilt1968}
+Romhilt, D.W.; Estes, E.H.
+\newblock A Point-Score System for the {ECG} Diagnosis of Left Ventricular
+  Hypertrophy.
+\newblock {\em American Heart Journal} {\bf 1968}, {\em 75},~752--758.
+\newblock {\url{https://doi.org/10.1016/0002-8703(68)90035-5}}.
+
+\bibitem[Peguero et~al.(2017)Peguero, Lo~Presti, Perez, Issa, Brenes, and
+  Tolentino]{Peguero2017}
+Peguero, J.G.; Lo~Presti, S.; Perez, J.; Issa, O.; Brenes, J.C.; Tolentino, A.
+\newblock Electrocardiographic Criteria for the Diagnosis of Left Ventricular
+  Hypertrophy.
+\newblock {\em Journal of the American College of Cardiology} {\bf 2017}, {\em
+  69},~1694--1703.
+\newblock {\url{https://doi.org/10.1016/j.jacc.2017.01.037}}.
+
+\bibitem[Rautaharju et~al.(2009)Rautaharju, Surawicz, and
+  Gettes]{Rautaharju2009}
+Rautaharju, P.M.; Surawicz, B.; Gettes, L.S.
+\newblock {AHA/ACCF/HRS} Recommendations for the Standardization and
+  Interpretation of the Electrocardiogram: Part {IV}: The {ST} Segment, {T} and
+  {U} Waves, and the {QT} Interval.
+\newblock {\em Circulation} {\bf 2009}, {\em 119},~e241--e250.
+\newblock {\url{https://doi.org/10.1161/CIRCULATIONAHA.108.191096}}.
+
+\bibitem[Macfarlane et~al.(2011)Macfarlane, van Oosterom, Pahlm, Kligfield,
+  Janse, and Camm]{MacFarlane2011}
+Macfarlane, P.W.; van Oosterom, A.; Pahlm, O.; Kligfield, P.; Janse, M.; Camm,
+  J., Eds.
+\newblock {\em Comprehensive Electrocardiology}, 2nd ed.; Springer: London,
+  2011.
+\newblock {\url{https://doi.org/10.1007/978-0-85729-871-3}}.
+
+\bibitem[Goldberger et~al.(2000)Goldberger, Amaral, Glass, Hausdorff, Ivanov,
+  Mark, Mietus, Moody, Peng, and Stanley]{Goldberger2000}
+Goldberger, A.L.; Amaral, L.A.N.; Glass, L.; Hausdorff, J.M.; Ivanov, P.C.;
+  Mark, R.G.; Mietus, J.E.; Moody, G.B.; Peng, C.K.; Stanley, H.E.
+\newblock {PhysioBank}, {PhysioToolkit}, and {PhysioNet}: Components of a New
+  Research Resource for Complex Physiologic Signals.
+\newblock {\em Circulation} {\bf 2000}, {\em 101},~e215--e220.
+\newblock {\url{https://doi.org/10.1161/01.CIR.101.23.e215}}.
+
+\bibitem[Bouthillier et~al.(2021)Bouthillier, Delaunay, Bronzi, Trofimov,
+  Nichyporuk, Szeto, Mohammadi~Sepahvand, Raff, Madan, Voleti, Ebrahimi~Kahou,
+  Michalski, Serdyuk, Arbel, Pal, Varoquaux, and Vincent]{Bouthillier2021}
+Bouthillier, X.; Delaunay, P.; Bronzi, M.; Trofimov, A.; Nichyporuk, B.; Szeto,
+  J.; Mohammadi~Sepahvand, N.; Raff, E.; Madan, K.; Voleti, V.;  et~al.
+\newblock Accounting for Variance in Machine Learning Benchmarks.
+\newblock In Proceedings of the Machine Learning and Systems,  2021, Vol.~3,
+  pp. 747--769.
+
+\bibitem[Dodge et~al.(2019)Dodge, Gururangan, Card, Schwartz, and
+  Smith]{Dodge2019}
+Dodge, J.; Gururangan, S.; Card, D.; Schwartz, R.; Smith, N.A.
+\newblock Show Your Work: Improved Reporting of Experimental Results.
+\newblock In Proceedings of the 2019 Conference on Empirical Methods in Natural
+  Language Processing. Association for Computational Linguistics,  2019, pp.
+  2185--2194.
+\newblock {\url{https://doi.org/10.18653/v1/D19-1224}}.
+
+\bibitem[Hollander et~al.(2014)Hollander, Wolfe, and Chicken]{Hollander2014}
+Hollander, M.; Wolfe, D.A.; Chicken, E.
+\newblock {\em Nonparametric Statistical Methods}, 3rd ed.; John Wiley \& Sons:
+  Hoboken, NJ,  2014.
+
+\bibitem[Wagner et~al.(2022)Wagner, Strodthoff, Bousseljot, Kreiseler, Lunze,
+  Samek, and Schaeffter]{PTBXLv103}
+Wagner, P.; Strodthoff, N.; Bousseljot, R.D.; Kreiseler, D.; Lunze, F.I.;
+  Samek, W.; Schaeffter, T.
+\newblock {PTB-XL, a large publicly available electrocardiography dataset}
+  (version 1.0.3).
+\newblock PhysioNet,  2022.
+\newblock Accessed: 19 May 2026, {\url{https://doi.org/10.13026/kfzx-aw45}}.
+
+\end{thebibliography}

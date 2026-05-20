@@ -1,0 +1,111 @@
+{
+  "dataset": "PTB-XL 1.0.3 working index",
+  "index_file": "C:\\Users\\hp\\Documents\\Playground\\ezyx-atlas-a_gihub\\index_complete.parquet",
+  "n_records": 21799,
+  "n_unique_patients": 18869,
+  "fold_counts": {
+    "1": 2175,
+    "2": 2181,
+    "3": 2192,
+    "4": 2174,
+    "5": 2174,
+    "6": 2173,
+    "7": 2176,
+    "8": 2173,
+    "9": 2183,
+    "10": 2198
+  },
+  "patient_disjoint_verification": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  },
+  "prevalence": {
+    "all": {
+      "n_records": 21799,
+      "NORM": {
+        "positive_records": 9514,
+        "prevalence_percent": 43.644
+      },
+      "MI": {
+        "positive_records": 5469,
+        "prevalence_percent": 25.088
+      },
+      "STTC": {
+        "positive_records": 5235,
+        "prevalence_percent": 24.015
+      },
+      "CD": {
+        "positive_records": 4898,
+        "prevalence_percent": 22.469
+      },
+      "HYP": {
+        "positive_records": 2649,
+        "prevalence_percent": 12.152
+      }
+    },
+    "train_fold_1_8": {
+      "n_records": 17418,
+      "NORM": {
+        "positive_records": 7596,
+        "prevalence_percent": 43.61
+      },
+      "MI": {
+        "positive_records": 4379,
+        "prevalence_percent": 25.141
+      },
+      "STTC": {
+        "positive_records": 4186,
+        "prevalence_percent": 24.033
+      },
+      "CD": {
+        "positive_records": 3907,
+        "prevalence_percent": 22.431
+      },
+      "HYP": {
+        "positive_records": 2119,
+        "prevalence_percent": 12.166
+      }
+    },
+    "test_fold_10": {
+      "n_records": 2198,
+      "NORM": {
+        "positive_records": 963,
+        "prevalence_percent": 43.813
+      },
+      "MI": {
+        "positive_records": 550,
+        "prevalence_percent": 25.023
+      },
+      "STTC": {
+        "positive_records": 521,
+        "prevalence_percent": 23.703
+      },
+      "CD": {
+        "positive_records": 496,
+        "prevalence_percent": 22.566
+      },
+      "HYP": {
+        "positive_records": 262,
+        "prevalence_percent": 11.92
+      }
+    }
+  },
+  "q_meta_distribution": [
+    {
+      "q_meta": 0.5,
+      "count": 131,
+      "percent": 0.601
+    },
+    {
+      "q_meta": 0.666667,
+      "count": 12,
+      "percent": 0.055
+    },
+    {
+      "q_meta": 1.0,
+      "count": 21656,
+      "percent": 99.344
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.tmp
+*.bak
+*.old
+*.orig
+.ipynb_checkpoints/
