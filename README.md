@@ -131,17 +131,17 @@ See `mdpi_mathematics_submission_package/MDPI_template_ACS_v2/main_en.pdf` for t
 
 ## Experimental groups
 
-| Group | Type | Description | Runs | Seeds |
-|---|---|---|---|---|
-| **A** | Confirmatory | `none` vs `demo` vs `demo+anthro` (BH-FDR 3-test family) | 60 | 20 |
-| B | Exploratory | `meta_hid` sensitivity {32, 64, 128†, 256} | 40 | 10 |
-| C | Exploratory | λ_LAUC sensitivity {0.00, 0.04, 0.08†, 0.12, 0.16} | 50 | 10 |
-| D | Exploratory | Augmentation ablation (aug† vs noaug) | 20 | 10 |
-| E | Exploratory | 8 architectural ablations (E1 meta-only … E8 trainmask) | 80 | 10 |
-| **F** | Confirmatory | 4 alternative fold pairs (folds 2, 3, 7, 8 as test) | 20 | 5 |
-| **Total** | | | **250** unique runs | |
+| Group | Type | Description | Reported descriptors | Unique runs | Seeds |
+|---|---|---|---:|---:|---|
+| **A** | Confirmatory | `none` vs `demo` vs `demo+anthro` (BH-FDR 3-test family) | 60 | 60 | 20 |
+| B | Exploratory | `meta_hid` sensitivity {32, 64, 128†, 256} | 40 | 30 | 10 |
+| C | Exploratory | λ_LAUC sensitivity {0.00, 0.04, 0.08†, 0.12, 0.16} | 50 | 40 | 10 |
+| D | Exploratory | Augmentation ablation (aug† vs noaug) | 20 | 20 | 20 |
+| E | Exploratory | 8 architectural ablations (E1 meta-only … E8 trainmask) | 80 | 80 | 10 |
+| **F** | Descriptive | 4 alternative fold pairs (folds 2, 3, 7, 8 as test) | 20 | 20 | 5 per fold |
+| **Total** | | | **270** | **250** | |
 
-† = reference value shared with Group A (counted once in unique run total).
+† = reference value shared with Group A; descriptors include declared seed-variant comparisons, while unique runs count each shared run once.
 
 ---
 
