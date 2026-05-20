@@ -28,6 +28,7 @@ It provides:
 - The **paper figures** (Figures 1–6) in `figures/`
 - The **authoritative MDPI submission package** (`mdpi_mathematics_submission_package/MDPI_template_ACS_v2/`) including `main_en.tex`, `main_en.pdf`, and `bibliography.bib`
 - A complete **statistical analysis** package (`results/`) with paired Wilcoxon tests, Benjamini–Hochberg FDR correction over the pre-specified 3-test family, bootstrap CIs, and effect sizes
+- Aggregate **item 8 supplementary analyses** (`results/item8_*`) covering metadata-only LR/XGBoost baselines, post-hoc metadata controls, per-class AUPRC, Brier/ECE, and subgroup AUC summaries
 - A strict **CPU Docker reproducibility layer** (`reproducibility/`)
 - A **Google Colab smoke-test path** (`colab/`)
 
@@ -162,6 +163,7 @@ eznx-atlas-a/
 ├── scripts/
 │   ├── render_manuscript_result_figures.py  # Figures 3, 5, 6 generation
 │   ├── render_article_artifacts.py          # Table/artifact export
+│   ├── complete_item8_supplementary_analyses.py # Item 8 aggregate analyses
 │   └── ...
 │
 ├── reproducibility/
@@ -184,6 +186,9 @@ eznx-atlas-a/
 │   ├── table_results_latex.tex              # LaTeX table fragment
 │   ├── missingness_eval_demo_anthro_summary.json  # Figure 4 source data
 │   ├── missingness_eval_demo_anthro_rows.csv
+│   ├── item8_supplementary_analysis_tables.md     # LR/XGBoost, AUPRC, calibration, controls, subgroups
+│   ├── item8_supplementary_analysis_summary.json
+│   ├── item8_*.csv                                # Item 8 aggregate CSV tables
 │   ├── dataset_integrity_report.json
 │   ├── dataset_integrity_report.md
 │   ├── seed_json/                           # 60 Group A raw seed-level JSON files
@@ -316,6 +321,18 @@ python analyze_multiseed_results.py \
   --n_bootstrap 10000
 ```
 
+### Step 4 — Recompute item 8 supplementary analyses
+
+This step uses the Group A probability archives/checkpoints plus the PTB-XL index.
+
+```bash
+python scripts/complete_item8_supplementary_analyses.py \
+  --runs-dir runs_output \
+  --data-root "$EZNX_DATA_REAL" \
+  --index-path index_complete.parquet \
+  --output-dir results
+```
+
 ---
 
 ## Statistical protocol
@@ -325,6 +342,8 @@ The primary confirmatory analysis applies **exact two-sided paired Wilcoxon sign
 All other groups (B, C, D, E) are **exploratory**: raw p-values are reported descriptively without FDR correction. Group F is a **pre-declared multi-split absolute-performance check** analysed descriptively at the fold level (4 units), with no statistical test across the 20 runs as if independent; because only `demo+anthro` was re-run and the metadata normalization index was built from the primary folds 1--8, Group F should not be interpreted as a within-fold metadata-gain test.
 
 Per-class tests (DA−NONE sub-family, 5 tests) form a **secondary, post-hoc BH-FDR family** and are not pre-specified.
+
+Item 8 supplementary analyses are **descriptive repository artifacts**: they close the pre-specified reporting checklist for LR/XGBoost baselines, metadata decomposition controls, per-class AUPRC, Brier/ECE, and subgroup AUC, but they do not expand the confirmatory test family.
 
 The minimum attainable exact Wilcoxon p at n = 20 is 2/2²⁰ ≈ 1.9 × 10⁻⁶.
 
